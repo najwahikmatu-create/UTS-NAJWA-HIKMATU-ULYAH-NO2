@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web UNINDRA (Logo Disamping & Alamat Merah)</title>
+    <style>
+        body {
+            /* Latar belakang putih sesuai gambar */
+            background-color: yellow; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Container untuk logo dan teks, diatur dengan flexbox untuk posisi samping */
+        .header-container {
+            display: flex; /* Mengaktifkan flexbox */
+            align-items: center; /* Memposisikan item secara vertikal di tengah */
+            justify-content: center; /* Memposisikan item secara horizontal di tengah */
+            margin-top: 20px;
+            margin-bottom: 15px;
+            width: fit-content; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Gaya untuk logo */
+        .header-container img {
+            width: 80px; /* Ukuran logo */
+            height: auto;
+            margin-right: 15px; /* Jarak antara logo dan teks */
+        }
+
+        /* Gaya untuk teks di samping logo */
+        .header-text {
+            text-align: left; 
+        }
+        .header-text div {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.2; 
+        }
+        .header-text .alamat {
+            /* Ketentuan: Tulisan jalan nangka merah */
+            color: red; 
+            font-size: 14px;
+            font-weight: normal;
+            font-style: italic; 
+            margin-top: 5px; 
+        }
+
+        /* Styling untuk Garis Pemisah */
+        .separator {
+            width: 50%; 
+            height: 3px; 
+            background-color: #191970; /* Biru Tua/Navy */
+            margin: 10px auto;
+            border: none;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.2); 
+        }
+
+        /* Styling untuk Tabel */
+        table {
+            border-collapse: collapse;
+            width: 50%; 
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+        td:nth-child(2) {
+            width: 1%;
+            text-align: center;
+        }
+
+        /* Styling untuk Daftar (List) */
+        .daftar-fakultas {
+            width: 50%;
+            margin: 15px auto 0 auto; 
+            text-align: left;
+        }
+        .daftar-fakultas p {
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+        .daftar-fakultas ol {
+            margin-top: 0;
+            padding-left: 30px;
+        }
+
+        /* Styling untuk Tombol Simpan */
+        .tombol-simpan {
+            width: 50%;
+            margin: 20px auto;
+            text-align: right; 
+        }
+        button {
+            padding: 2px 10px; 
+            font-size: 12px;
+            border: 1px solid #000;
+            background-color: #f0f0f0; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <img src="LOGO UNINDRA.JPG.png" alt="Logo UNINDRA">
+        <div class="header-text">
+            <div>UNIVERSITAS INDRAPRASTA PGRI</div>
+            <div>(UNINDRA)</div>
+            <div class="alamat">Jl. Nangka No.58 Tanjung Barat - Jaksel</div>
+        </div>
+    </div>
+    
+    <div class="separator"></div>
+
+    <table>
+        <tr>
+            <td style="width: 20%;">Nama</td>
+            <td>:</td>
+            <td style="width: 79%;">NAJWA HIKMATU ULYAH</td>
+        </tr>
+        <tr>
+            <td>NPM</td>
+            <td>:</td>
+            <td>202433500324</td>
+        </tr>
+    </table>
+
+    <div class="daftar-fakultas">
+        <p>FTIK:</p>
+        <ol type="A">
+            <li>Informatika</li>
+            <li>Teknik Arsitektur</li>
+            <li>Teknik Industri</li>
+        </ol>
+    </div>
+
+    <div class="tombol-simpan">
+        <button>SIMPAN</button>
+    </div>
+
+    <div class="daftar-fakultas">
+        <p>MIPA:</p>
+        <ol type="I">
+            <li>Matematika</li>
+            <li>Fisika</li>
+            <li>Biologi</li>
+        </ol>
+    </div>
+
+</body>
+</html>
